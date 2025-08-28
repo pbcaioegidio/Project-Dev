@@ -1,29 +1,40 @@
-# Project-Dev
+# 🌐 Project Dev - Portfólio & Sistema Canino
 
-Este é um portfólio pessoal desenvolvido em HTML, CSS e JavaScript. O objetivo é apresentar informações profissionais, habilidades, projetos e dados dinâmicos como data, horário de Brasília e temperatura em Goiânia.
+Este repositório contém meu portfólio pessoal e um projeto demonstrativo chamado **Sistema Canino**.  
+O objetivo é apresentar minhas habilidades em **desenvolvimento web front-end**, organização de código e design de interfaces modernas.
 
-## Funcionalidades
-- Perfil com foto animada e descrição
-- Lista de habilidades técnicas
-- Seção de projetos (em breve)
-- Exibição dinâmica da data e horário de Brasília
-- Consulta automática da temperatura em Goiânia
-- Blocos de código animados para visualização técnica
-- Layout responsivo para desktop, tablet e mobile
+---
 
-## Estrutura do Projeto
-- `index.html`: Página principal do portfólio
-- `style.css`: Estilos visuais e responsividade
-- `main.js`: Scripts para atualização dinâmica de informações
+## 📂 Estrutura do Projeto
 
-## Como executar
-Basta abrir o arquivo `index.html` em qualquer navegador moderno.
+- **Página Inicial (Portfólio)**
+  - Apresentação pessoal (perfil, habilidades, informações de contato).
+  - Exibe:
+    - 📅 Data atual (Brasília)
+    - ⏰ Hora de Brasília em tempo real
+    - 🌡️ Temperatura em Goiânia via API pública
+  - Animações de fundo com blocos de código.
+  - Link para acessar o Sistema Canino.
 
-## Como contribuir
-1. Faça um fork do projeto
-2. Crie uma branch (`git checkout -b feature/nome-da-feature`)
-3. Faça suas alterações
-4. Envie um pull request
+- **Sistema Canino**
+  - Catálogo interativo com cards de raças fictícias:
+    - 🐕 Apollo (Pitbull)
+    - 🐶 Akira (American Bully)
+    - 🐩 Athena (Shih Tzu mini)
+  - Cada card apresenta:
+    - Foto
+    - Estatísticas (temperamento, energia, origem, etc.)
+    - Pequena descrição
+  - Fundo animado com partículas (usando [particles.js](https://vincentgarreau.com/particles.js/)).
 
-## Licença
-Este projeto está sob a licença MIT.
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- **HTML5**
+- **CSS3** (responsividade + animações)
+- **JavaScript (Vanilla)**
+- **API externa** (Open-Meteo para clima em Goiânia)
+- **Particles.js** para animação de fundo no Sistema Canino
+
+---
