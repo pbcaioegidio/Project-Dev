@@ -1,0 +1,178 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background: #121212;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+  color: #fff;
+}
+
+/* Partículas */
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  top: 0;
+  left: 0;
+}
+
+/* Container principal */
+.container {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Cabeçalho */
+.header {
+  text-align: center;
+  margin-bottom: 50px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 111, 97, 0.3);
+}
+
+.header h1 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  color: #ff6f61;
+  text-shadow: 0 0 20px rgba(255, 111, 97, 0.8);
+}
+
+/* Grid de raças */
+.dogs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+/* Card individual */
+.dog-card {
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  padding: 25px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 111, 97, 0.3);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.dog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(255, 111, 97, 0.2);
+  border-color: #ff6f61;
+}
+
+.dog-image {
+  width: 100%;
+  height: 250px;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.dog-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.dog-card:hover .dog-image img {
+  transform: scale(1.05);
+}
+
+.dog-breed {
+  font-size: 1.8rem;
+  color: #ff6f61;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.dog-info {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.dog-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.stat {
+  background: rgba(255, 111, 97, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-bottom: 5px;
+}
+
+.stat-value {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ff6f61;
+}
+
+.dog-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .dogs-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .dog-stats {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Animação de entrada */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dog-card {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.dog-card:nth-child(1) { animation-delay: 0.1s; }
+.dog-card:nth-child(2) { animation-delay: 0.2s; }
+.dog-card:nth-child(3) { animation-delay: 0.3s; }
+.dog-card:nth-child(4) { animation-delay: 0.4s; }
+.dog-card:nth-child(5) { animation-delay: 0.5s; }
+.dog-card:nth-child(6) { animation-delay: 0.6s; }
